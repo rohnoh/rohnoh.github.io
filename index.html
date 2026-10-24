@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="ko">
+<head>
+ <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#f7f3ed">
+ <meta name="description" content="우리 가족의 설레는 날까지, 함께 카운트다운해요."><title>우리에게 온 작은 기적</title>
+ <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Serif+KR:wght@400;500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css">
+</head>
+<body class="landing-page">
+ <div class="progress"><span id="progressBar"></span></div>
+ <header class="topbar"><a class="wordmark" href="#top">our little one<span>✳</span></a><span class="top-note" id="familyLabel">A LITTLE NOTE FOR YOU</span></header>
+ <main id="top">
+  <section class="countdown-hero panel"><div class="hero-orbit orbit-one"></div><div class="hero-orbit orbit-two"></div><div class="countdown-copy reveal">
+   <p class="eyebrow">OUR LITTLE BIG REVEAL</p><h1><span id="titleLead">우리 가족의</span><br><em id="titleEmphasis">가장 설레는 날</em><span id="titleTail">까지</span></h1>
+   <p class="countdown-intro" id="mainIntro">오래 기다리셨죠? 저희에게 찾아온 작은 기쁨을<br>가족과 함께 나누는 날이 다가오고 있어요.</p>
+   <div class="countdown" id="countdown" aria-live="polite"><div><strong id="days">--</strong><span>일</span></div><i>:</i><div><strong id="hours">--</strong><span>시간</span></div><i>:</i><div><strong id="minutes">--</strong><span>분</span></div><i>:</i><div><strong id="seconds">--</strong><span>초</span></div></div>
+   <p class="reveal-date" id="revealDate">공개 날짜를 불러오는 중</p>
+   <div class="poll-card" id="pollCard"><p class="poll-question">작은 천사는 누구일까요?</p><p class="poll-note">설레는 마음으로 한 표를 남겨주세요</p>
+    <div class="poll-buttons"><button type="button" data-vote="boy">왕자님 같아요 <span>♡</span></button><button type="button" data-vote="girl">공주님 같아요 <span>♡</span></button></div>
+    <p class="poll-status" id="pollStatus" aria-live="polite">둘 중 하나를 선택하면 성별은 공개일에 공개됩니다.</p>
+   </div>
+  </div><div class="hero-stamp"><span>MADE<br>WITH LOVE</span><b>♡</b></div><div class="hero-bottom"><span>A DAY WE'LL REMEMBER</span><span>01 — 01</span></div></section>
+  <section class="after-date panel" id="afterDate" hidden><div class="section-index"><span>01</span><i></i><span>THE DAY IS HERE</span></div><div class="after-inner"><p class="eyebrow">TODAY IS THE DAY</p><h2>드디어 그날이<br><em>찾아왔어요.</em></h2><p class="after-copy">함께할 수 있다면 실시간으로 만나고,<br>놓쳤다면 별도 페이지에서 소식을 확인해 주세요.</p><div class="live-card"><span class="live-dot"></span><p class="eyebrow">JOIN US LIVE</p><h3>실시간 공개에 함께하기</h3><p>가족이 함께 영상 통화에서 만나요.</p><a id="zoomLink" class="primary-link" href="#" target="_blank" rel="noopener" hidden>Zoom에서 함께하기 ↗</a><span id="zoomMissing" class="not-ready">Zoom 공개 링크를 확인하고 있어요.</span></div><div class="private-card"><p class="eyebrow">MISSED THE CALL?</p><h3>사진과 마지막 소식 보기</h3><p>비밀번호가 필요한 별도의 공개 페이지로 이동합니다.</p><a id="revealPageLink" class="primary-link" href="reveal.html" hidden>비밀번호 공개 페이지 열기 ↗</a><span id="pageMissing" class="not-ready">공개 페이지를 준비하고 있어요.</span></div></div></section>
+ </main><script src="config.js"></script><script src="script.js"></script>
+</body></html>

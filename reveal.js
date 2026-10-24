@@ -1,0 +1,8 @@
+(()=>{
+ const c=window.REVEAL_CONFIG||{},q=new URLSearchParams(location.search),family=q.get('family')==='parents'?'parents':'inlaws',form=document.getElementById('passwordForm'),error=document.getElementById('gateError');
+ form.addEventListener('submit',e=>{e.preventDefault();if(document.getElementById('password').value!==String(c.revealPassword||'America')){error.textContent='비밀번호가 맞지 않아요. 다시 확인해 주세요.';return}error.textContent='';show()});
+ function show(){document.getElementById('gate').hidden=true;const section=document.getElementById('result');section.hidden=false;const sex=c.babySex==='girl'?'공주님':c.babySex==='boy'?'왕자님':'아직 공개하지 않았어요';document.getElementById('sex').textContent=sex;const copy=c.revealCopy?.[family]||{};document.getElementById('resultTitle').textContent=copy.title||'우리 가족이 되어줘서 고마워요.';let message=copy.message||'곧 만나자, 우리 아가.';if(c.babyName)message+=' 이름은 '+c.babyName+'예요.';if(c.dueDate)message+=' 만날 예정일은 '+c.dueDate+'예요.';document.getElementById('resultMessage').textContent=message;
+ const holder=document.getElementById('photos');for(const item of (c.photos||[])){if(!item.src)continue;const card=document.createElement('figure'),img=document.createElement('img'),cap=document.createElement('figcaption');img.src=item.src;img.alt=item.alt||'우리 아기의 사진';cap.textContent=item.caption||'';card.append(img,cap);holder.append(card)}
+ const conf=document.getElementById('confetti');for(let i=0;i<72;i++){const p=document.createElement('i');p.style.left=Math.random()*100+'%';p.style.animationDelay=Math.random()*1.4+'s';p.style.animationDuration=2.7+Math.random()*2+'s';p.style.setProperty('--drift',Math.random()*180-90+'px');conf.append(p)}
+ }
+})();

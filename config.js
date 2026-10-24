@@ -5,7 +5,7 @@
  */
 window.REVEAL_CONFIG={
   family:'inlaws', // 'inlaws' for in-laws, 'parents' for parents; URL can override with ?family=parents
-  revealDate:'2026-10-24T00:00:00', // Set as ISO date/time with UTC offset, e.g. '2026-11-15T20:00:00-05:00'
+  revealDate:'2026-10-24T00:00:00-05:00', // Set as ISO date/time with UTC offset, e.g. '2026-11-15T20:00:00-05:00'
   revealTimeZone:'America/New_York',
   revealPassword:'America',
   zoomUrl:'https://us05web.zoom.us/j/86402560057?pwd=x6pynJuxjxujkZGFbFrVvfudJpr2Zq.1',
